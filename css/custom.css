@@ -185,13 +185,12 @@ img {
 
 .featured .services {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 5px;
   margin-top: 2rem;
 }
 
 .featured .services > article {
-  grid-column: span 2;
   display: grid;
   grid-template-rows: 100px 1fr;
   gap: 1.5rem;
