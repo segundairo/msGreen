@@ -49,11 +49,11 @@ img {
 }
 
 .section-lead {
-  font-size: 2rem;
+  font-size: 1.52rem;
   font-family: "Poppins";
-  font-size: 2rem;
   letter-spacing: 1px;
   color: #097347;
+  padding: .5rem 0;
 }
 
 .navbar {
@@ -180,14 +180,14 @@ img {
 
 .featured {
   padding: 0 1.2rem 2rem;
-  border: 1px solid #007d53;
+  border: 1px solid #cecece;
 }
 
 .featured .services {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 5px;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 .featured .services > article {
@@ -261,7 +261,7 @@ img {
 }
 
 #home-aside > article {
-  border: 1px solid;
+  border: 1px solid #cecece;
 }
 
 #home-aside > article > article {
