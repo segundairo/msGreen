@@ -63,7 +63,7 @@ img {
 #hero {
   min-height: 400px;
   padding: 0 2px;
-  margin: 1rem 0 2rem;
+  margin: 1rem 1rem 0;
 }
 
 #hero .hero-wrapper {
@@ -287,7 +287,7 @@ img {
 
 #home-aside .title a {
   text-transform: none;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 #home-aside .title h3 {
@@ -298,16 +298,20 @@ img {
   position: relative;
 }
 
-#home-aside > .hom h4 {
+#home-aside > .hom .hom-title {
   position: absolute;
-  bottom: -10px;
   left: 0;
+  bottom: 0;
   width: 100%;
   color: white;
-  padding: .5rem;
+  padding: 0.5rem;
   text-align: center;
-  background: darkgreen;
-  font-size: 1.2rem;
+  background: limegreen;
+}
+
+#home-aside > .hom .hom-title span {
+  display: block;
+  font-size: 1rem;
 }
 
 #home-aside > article:not(:last-of-type) {
@@ -329,7 +333,7 @@ img {
 }
 
 #home-aside > article > article form input {
-  padding: .5rem;
+  padding: 0.5rem;
   border: none;
   background: #f2f2f2;
   outline: none;
@@ -338,22 +342,22 @@ img {
 }
 
 #home-aside > article > article form span {
-  padding: .5rem;
+  padding: 0.5rem;
 }
 
 #home-aside > article img {
   border-radius: 5px;
 }
 
-#home-aside ul {
+#home-aside .categories {
   margin: 0 1rem 1rem;
 }
 
-#home-aside ul li:first-of-type {
+#home-aside .categories li:first-of-type {
   margin-top: 1rem;
 }
 
-#home-aside ul li {
+#home-aside .categories li {
   background: #f2f2f2;
   padding: 0.5rem 1rem;
   transition: all 0.2s ease;
@@ -361,21 +365,66 @@ img {
   border-left: 3px solid darkgreen;
 }
 
-#home-aside ul li:hover, #home-aside ul li.current-cat {
+#home-aside .categories li:hover, #home-aside .categories li.current-cat {
   background: #bfbfbf;
 }
 
-#home-aside ul li a {
+#home-aside .categories li a {
   color: black;
   font-weight: 300;
   text-transform: capitalize;
 }
 
-#home-aside ul li + li {
+#home-aside .categories li + li {
   margin-top: 3px;
 }
 
-#home-aside #searchform {
+#home-aside .annoucements li {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  place-items: center;
+  padding: .3rem 0;
+}
+
+#home-aside .annoucements li .date {
+  margin-right: 1rem;
+  line-height: 1;
+  height: 80px;
+  width: 80px;
+  background: limegreen;
+  color: white;
+  border-radius: 50%;
   display: flex;
-  margin-bottom: 2rem;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#home-aside .annoucements li .date .month {
+  font-size: .85rem;
+  display: block;
+}
+
+#home-aside .annoucements li .date .day {
+  font-size: 2.3rem;
+  font-weight: bold;
+}
+
+#home-aside .annoucements li a {
+  color: #232323;
+  padding-right: 1rem;
+  line-height: 1.2;
+  justify-self: flex-start;
+}
+
+#home-aside .annoucements li:hover .date {
+  background: darkgreen;
+}
+
+#home-aside .annoucements li:not(:first-of-type) {
+  margin-top: .5rem;
+}
+
+#home-aside .annoucements li:not(:last-of-type) {
+  border-bottom: 1px solid #cecece;
 }
