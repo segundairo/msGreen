@@ -76,7 +76,7 @@ img {
 #hero .hero-wrapper .hero-main {
   height: 100%;
   width: 100%;
-  background: url(/images/slider-3.jpg) no-repeat center center/cover;
+  background: url(/images/sliders/slide-1.jpg) no-repeat center center/cover;
   color: #e1e1e1;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -106,6 +106,11 @@ img {
   color: #c0c5cb;
   font-size: .9rem;
   flex: 2;
+}
+
+#hero .hero-wrapper .hero-main .slide article a {
+  align-self: flex-start;
+  font-size: .8rem;
 }
 
 #hero .hero-wrapper .hero-aside {
@@ -144,6 +149,7 @@ img {
   flex-direction: column;
   justify-content: space-evenly;
   padding: 0 1rem;
+  padding-right: 2rem;
 }
 
 #hero .hero-wrapper .hero-aside > article .contentBox h5 {
@@ -176,6 +182,33 @@ img {
   text-transform: uppercase;
   font-family: "Poppins";
   border-radius: 5px;
+}
+
+@media only screen and (max-width: 992px) {
+  #hero {
+    min-height: auto;
+  }
+  #hero .hero-wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+  #hero .hero-wrapper .hero-main {
+    border-radius: 10px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #hero {
+    min-height: auto;
+    margin-bottom: 0;
+  }
+  #hero .hero-wrapper {
+    grid-template-columns: 1fr;
+    row-gap: 1rem;
+    margin: 0 1rem;
+  }
+  #hero .hero-wrapper .hero-main {
+    border-radius: 10px;
+  }
 }
 
 .featured {
@@ -252,7 +285,28 @@ img {
   color: #097347;
 }
 
+#home-aside .title a {
+  text-transform: none;
+  font-size: .8rem;
+}
+
 #home-aside .title h3 {
+  font-size: 1rem;
+}
+
+#home-aside > .hom {
+  position: relative;
+}
+
+#home-aside > .hom h4 {
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+  color: white;
+  padding: .5rem;
+  text-align: center;
+  background: darkgreen;
   font-size: 1.2rem;
 }
 
@@ -266,6 +320,25 @@ img {
 
 #home-aside > article > article {
   padding: 1rem;
+}
+
+#home-aside > article > article form {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+
+#home-aside > article > article form input {
+  padding: .5rem;
+  border: none;
+  background: #f2f2f2;
+  outline: none;
+  font-weight: bold;
+  color: #232323;
+}
+
+#home-aside > article > article form span {
+  padding: .5rem;
 }
 
 #home-aside > article img {
